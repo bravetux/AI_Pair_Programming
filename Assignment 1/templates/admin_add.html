@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}ShopEasy - Add Product{% endblock %}
+{% block content %}
+<h1 class="page-title">Add Product</h1>
+<form method="post" class="admin-form">
+    <label>Name: <input type="text" name="name" required></label><br>
+    <label>Price: <input type="number" name="price" step="0.01" required></label><br>
+    <label>Category: <input type="text" name="category" required></label><br>
+    <button class="add-cart-btn" type="submit">Add</button>
+</form>
+<a href="/admin">Back to Admin</a>
+{% endblock %}

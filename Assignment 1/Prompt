@@ -1,0 +1,11 @@
+# Prompts Used to Create This Project
+
+1. Create a small sized ecommerce based web based full stack project, with suitable front end, back code logic and a simple sql based database and using VS Code. This should create multiple files and edit them simultaneously with your prompt.
+
+2. improve the website interface similar to that of amazon website
+
+3. In the home page add 50 different products under 10 categories
+
+4. Fix the issue sqlite3.OperationalError: no such column: category
+
+5. Create a README.md file for the ecomerce project with all the architect details. Also Create a file Prompt and proviide the prompts provide to create the fils so far (See <attachments> above for file contents. You may not need to search or read the file again.)

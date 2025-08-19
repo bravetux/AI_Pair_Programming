@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}ShopEasy - Admin{% endblock %}
+{% block content %}
+<h1 class="page-title">Admin Panel</h1>
+<a href="/admin/add" class="add-cart-btn">Add Product</a>
+<div class="admin-list">
+    {% for product in products %}
+    <div class="admin-item">
+        <span class="admin-item-title">{{ product['name'] }}</span>
+        <span class="admin-item-price">${{ '%.2f'|format(product['price']) }}</span>
+        <a class="delete-btn" href="/admin/delete/{{ product['id'] }}">Delete</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

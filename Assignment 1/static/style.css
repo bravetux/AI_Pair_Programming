@@ -1,0 +1,26 @@
+ul { list-style: none; padding: 0; }
+body { font-family: 'Roboto', Arial, sans-serif; margin: 0; background: #f4f4f4; }
+.header { background: #232f3e; color: #fff; padding: 1em 0; }
+.header .container { display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
+.logo { font-size: 2em; font-weight: bold; color: #ff9900; text-decoration: none; }
+.nav a { color: #fff; margin-left: 2em; text-decoration: none; font-weight: 500; }
+.nav a:hover { color: #ff9900; }
+.container { max-width: 1100px; margin: 0 auto; padding: 2em 1em; }
+.page-title { color: #232f3e; margin-bottom: 1em; }
+.product-grid { display: flex; flex-wrap: wrap; gap: 2em; }
+.product-card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); padding: 1.5em; width: 220px; display: flex; flex-direction: column; align-items: center; }
+.product-img { width: 120px; height: 120px; background: #eaeaea; border-radius: 8px; margin-bottom: 1em; }
+.amazon-img { background: url('https://m.media-amazon.com/images/I/61IwG9B9ZSL._AC_UL320_.jpg') center/cover no-repeat; }
+.product-title { font-size: 1.1em; font-weight: 700; margin-bottom: 0.5em; }
+.product-price { color: #b12704; font-size: 1.1em; margin-bottom: 1em; }
+.add-cart-btn { background: #ffd814; color: #232f3e; border: none; border-radius: 3px; padding: 0.5em 1.2em; font-weight: 700; cursor: pointer; text-decoration: none; }
+.add-cart-btn:hover { background: #f7ca00; }
+.cart-list, .admin-list { margin-top: 2em; }
+.cart-item, .admin-item { display: flex; align-items: center; justify-content: space-between; background: #fff; padding: 1em; border-radius: 6px; margin-bottom: 1em; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+.cart-item-title, .admin-item-title { font-weight: 500; }
+.cart-item-qty, .cart-item-price, .admin-item-price { margin-left: 1em; }
+.checkout-btn, .delete-btn { background: #0074d9; color: #fff; border: none; border-radius: 3px; padding: 0.5em 1.2em; font-weight: 700; cursor: pointer; text-decoration: none; }
+.checkout-btn:hover, .delete-btn:hover { background: #005fa3; }
+.admin-form label { display: block; margin-bottom: 0.5em; }
+.admin-form input { margin-left: 0.5em; }
+.footer { background: #232f3e; color: #fff; text-align: center; padding: 1em 0; margin-top: 2em; }

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}ShopEasy - Home{% endblock %}
+{% block content %}
+<h1 class="page-title">Products</h1>
+{% for cat in categories %}
+<h2 style="margin-top:2em; color:#b12704;">{{ cat['category'] }}</h2>
+<div class="product-grid">
+    {% for product in products if product['category'] == cat['category'] %}
+    <div class="product-card">
+        <div class="product-img amazon-img"></div>
+        <div class="product-info">
+            <div class="product-title">{{ product['name'] }}</div>
+            <div class="product-price">${{ '%.2f'|format(product['price']) }}</div>
+            <a class="add-cart-btn" href="/add_to_cart/{{ product['id'] }}">Add to Cart</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+{% endblock %}
